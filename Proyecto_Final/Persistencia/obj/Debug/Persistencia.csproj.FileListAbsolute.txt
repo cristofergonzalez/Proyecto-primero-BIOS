@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\Proyecto_Final\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\user\Desktop\Proyecto_Final\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\user\Desktop\Proyecto_Final\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\user\Desktop\Proyecto_Final\Persistencia\obj\Debug\Persistencia.pdb
+C:\Users\user\Desktop\Proyecto_Final\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Proyecto_Final\Persistencia\bin\Debug\EntidadesCompartidas.dll
+C:\Users\user\Desktop\Proyecto_Final\Persistencia\bin\Debug\EntidadesCompartidas.pdb

@@ -1,0 +1,174 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MPAdmin.master.cs" Inherits="MPAdmin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .gradiente
+        {
+            background: linear-gradient(90deg, white, #212121);
+            
+        }
+        .sombrita {
+              -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+              padding: 20px;
+              background:white;
+              -webkit-border-radius:5%;
+        }
+        .sombritaTxt
+        {
+            -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            }
+        .botonsombra
+        {
+           -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+           padding: 5px;
+           -webkit-border-radius:10%;       
+           }
+        #form1
+        {
+            height: 826px;
+            width: 1590px;
+        }
+        .style1
+        {
+            width: 167px;
+        }
+        .style2
+        {
+            width: 167px;
+            height: 141px;
+        }
+        .style4
+        {
+            height: 141px;
+            width: 726px;
+        }
+        .style5
+        {
+            width: 726px;
+        }
+        .style6
+        {
+            width: 167px;
+            height: 100px;
+        }
+        .style7
+        {
+            width: 726px;
+            height: 100px;
+        }
+        .style10
+        {            width: 98px;
+        }
+        .style11
+        {
+            height: 9px;
+            width: 98px;
+        }
+        .style12
+        {
+            width: 167px;
+            height: 3px;
+        }
+        .style14
+        {
+            width: 98px;
+            height: 3px;
+        }
+    </style>
+</head>
+<body class="gradiente">
+    <form id="form1" runat="server">
+    <div style="height: 649px" align="center">
+        
+        
+            <table style="width: 78%; height: 442px;">
+                <tr>
+                    <td align="center" class="style12" style="padding-bottom: 30px">
+                        <asp:Image ID="Image1" runat="server" Height="169px" 
+                            ImageUrl="~/Plantiilas de diseño/Finallogo.png" Width="127px" />
+                    </td>
+                    <td align="center" 
+                        style="padding-top: 200px; padding-left: 70px;">
+                        <br />
+                        <br />
+                    </td>
+                    <td class="style14" align="center" style="padding-top: 110px">
+                        <div class="sombrita" style="width: 103px">
+                        <asp:Label ID="lblUsuario" runat="server" ForeColor="#0099CC"></asp:Label>
+                            <br />
+                            <br />
+                        <asp:HyperLink ID="HyperLink1" runat="server" Font-Italic="True" 
+                            Font-Overline="False" Font-Underline="True" ForeColor="Black" 
+                            NavigateUrl="~/Principal.aspx">Cerrar sesión</asp:HyperLink>
+                        </div>
+                        </td>
+                </tr>
+                <tr>
+                    <td align="center" class="style2" style="padding-bottom: 70px">
+                        &nbsp;</td>
+                    <td class="style4" align="center" 
+                        style="padding-bottom: 150px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Menu ID="Menu1" runat="server" BackColor="#E3EAEB" 
+                            DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" 
+                            ForeColor="#666666" Orientation="Horizontal" 
+                            StaticPopOutImageTextFormatString="Expandir {5}" 
+                            StaticSubMenuIndent="10px" BorderWidth="1px">
+                            <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+                            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <DynamicMenuStyle BackColor="#E3EAEB" />
+                            <DynamicSelectedStyle BackColor="#1C5E55" />
+                            <Items>
+                                <asp:MenuItem NavigateUrl="~/AgregarUsuario.aspx" Text="Agregar admin" 
+                                    Value="Agregar adnim"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/ABMCategoria.aspx" Text="ABM categoria" 
+                                    Value="ABM categoria"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/AgregarPregunta.aspx" Text="Agregar pregunta" 
+                                    Value="Agregar pregunta"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/AgregarJuego.aspx" Text="Agregar juego" 
+                                    Value="Agregar juego"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/ListadoDeJuegos.aspx" Text="Listado de juegos" 
+                                    Value="Listado de juegos"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/ManejoDePregunta.aspx" Text="Manejo de preguntas" 
+                                    Value="Manejo de preguntas"></asp:MenuItem>
+                            </Items>
+                            <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+                            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <StaticSelectedStyle BackColor="#1C5E55" />
+                        </asp:Menu>
+                        <br />
+                        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <br />
+                    </td>
+                    <td class="style11" align="center" style="padding-bottom: 110px">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style6" align="center">
+                        </td>
+                    <td class="style7" align="center">
+                        &nbsp;</td>
+                    <td align="center" class="style10" style="padding-right: 10px">
+                        </td>
+                </tr>
+                <tr>
+                    <td class="style1">
+                        &nbsp;</td>
+                    <td class="style5">
+                        &nbsp;</td>
+                        
+                </tr>
+            </table>
+        
+        
+    </div>
+    </form>
+</body>
+</html>
